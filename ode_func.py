@@ -56,8 +56,8 @@ class GatedFusionModel(torch.nn.Module):
     def forward(self, grad_diff, grad_adv):
         X_diff = self.fc(grad_diff)
         X_adv = self.fc(grad_adv)
-        z = self.sigmoid(torch.add(X_diff,X_adv))
-        H = torch.add((z * X_diff), ((1 - z) * X_diff))
+        z = self.sigmoid(torch.add(X_diff, X_adv))
+        H = torch.add((z * X_diff), ((1 - z) * X_adv))
         return H
 
 class ODEFunc(nn.Module):
