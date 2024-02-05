@@ -19,7 +19,7 @@ Dependency can be installed using the following command:
 pip install -r requirements.txt
 ```
 ## Data Preparation
-The air quality data files for Beijing and Shenzen areas are available at [Google Drive](https://drive.google.com/drive/folders/1RWOA7kaPFAgjedoszOLCAjoQR1XSv8Dt) and should be put into the `data/` folder for running the code.
+The sample air quality data files for Beijing area are available at [Google Drive](https://drive.google.com/drive/folders/1RWOA7kaPFAgjedoszOLCAjoQR1XSv8Dt) and should be put into the `data/` folder for running the code.
 
 ## Model Traning and Evaluation
 The following code can be used to train and evaluate the model. 
