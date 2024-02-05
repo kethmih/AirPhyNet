@@ -1,0 +1,47 @@
+---
+base_dir: logs
+base_model_dir: models
+log_level: INFO
+
+data:
+  batch_size: 32
+  dataset_dir: data
+  val_batch_size: 32
+  test_batch_size: 32
+
+model:
+  seq_len: 24
+  horizon: 24
+  input_var: 6
+  #['PM2.5', 'temperature', 'pressure', 'humidity', 'ws', 'wd']
+  input_dim: 1 
+  output_dim: 1
+  latent_dim: 4
+  n_traj_samples: 3
+  ode_method: dopri5 
+  odeint_atol: 0.00001 
+  odeint_rtol: 0.00001 
+  rnn_units: 64 
+  num_rnn_layers: 1
+  gcn_step: 2
+  filter_type: diff #diff_adv, diff, adv, unkP
+  recg_type: gru 
+  save_latent: false
+  nfe: false
+
+train:
+  base_lr: 0.0005
+  weight_decay: 0.0005
+  dropout: 0
+  load: 0 
+  epoch: 0 
+  epochs: 100
+  epsilon: 1.0e-3
+  lr_decay_ratio: 0.1
+  max_grad_norm: 5
+  min_learning_rate: 2.0e-06
+  optimizer: adam
+  patience: 20
+  steps: [20, 30, 40, 50]
+  test_every_n_epochs: 10
+  results_dir: results
