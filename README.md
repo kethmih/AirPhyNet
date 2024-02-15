@@ -28,3 +28,11 @@ python main.py --config_filename = configs.yaml
 ```
 ## Citation
 If you find our work useful in your research, please cite:
+```tex
+@article{hettige2024airphynet,
+  title={AirPhyNet: Harnessing Physics-Guided Neural Networks for Air Quality Prediction},
+  author={Hettige, Kethmi Hirushini and Ji, Jiahao and Xiang, Shili and Long, Cheng and Cong, Gao and Wang, Jingyuan},
+  journal={arXiv preprint arXiv:2402.03784},
+  year={2024}
+}
+```
