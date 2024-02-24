@@ -1,5 +1,5 @@
 # AirPhyNet: Harnessing Physics-Guided Neural Networks for Air Quality Prediction
-This repo is the Pytorch implementation of our manuscript titled AirPhyNet: Physics-Guided Neural Networks for Air Quality Prediction. In this study, we present a novel physics guided differential equation network for precise air quality prediction over the next 72 hours with a physical meaning. The foundational training framework for this project is derived from [Echo-Ji](https://github.com/Echo-Ji/STDEN/tree/main).
+This repo is the Pytorch implementation of our manuscript titled [AirPhyNet: Physics-Guided Neural Networks for Air Quality Prediction]([https://github.com/Echo-Ji/STDEN/tree/main](https://arxiv.org/abs/2402.03784)). In this study, we present a novel physics guided differential equation network for precise air quality prediction over the next 72 hours with a physical meaning. The foundational training framework for this project is derived from [Echo-Ji](https://github.com/Echo-Ji/STDEN/tree/main).
 
 ## Framework
 ![AirPhyNet framework](https://github.com/kethmih/AirPhyNet/blob/main/img/AirPhyNet_Framework.png)
